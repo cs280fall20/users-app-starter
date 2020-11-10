@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+
+{% block body %}
+  {{ super() }}
+  <div class="container">
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+      <input type="text" name="username" placeholder="username" class="field">
+      <input type="password" name="password" placeholder="password" class="field">
+      <input type="submit" value="Register" class="btn">
+    </form>
+    <div class="link">
+      <a href="/">Already registered? Click here to login!</a>
+    </div>
+  </div>
+{% endblock %}

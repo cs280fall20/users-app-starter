@@ -1,0 +1,11 @@
+{% extends "base.njk" %}
+
+{% block body %}
+  {{ super() }}
+  <div class="container">
+    <h1>Welcome {{ username }}</h1>
+    <form action="/logout" method="POST">
+      <input type="submit" value="Logout" class="btn">
+    </form>
+  </div>
+{% endblock %}
